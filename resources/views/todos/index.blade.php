@@ -41,6 +41,6 @@
         </tbody>
     </table>
     <div style="display: flex; justify-content:center;" class="mt-5">
-        {{ $todos->links() }}
+        {{ $todos->withQueryString()->onEachSide(5)->links() }}
     </div>
 @endsection
